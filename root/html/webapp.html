@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Quiz App</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .options button {
+      display: block;
+      margin: 10px 0;
+      padding: 8px 12px;
+      width: 100%;
+      font-size: 16px;
+    }
+    .result {
+      font-size: 18px;
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Photography Quiz App</h1>
+    <div id="quiz">
+      <p class="question">What is the term for adjusting the amount of time the camera's sensor is exposed to light?</p>
+      <div class="options">
+        <button onclick="checkAnswer('a')">A: Aperture</button>
+        <button onclick="checkAnswer('b')">B: Shutter Speed</button>
+        <button onclick="checkAnswer('c')">C: ISO</button>
+        <button onclick="checkAnswer('d')">D: White Balance</button>
+      </div>
+    </div>
+    <div id="result" class="result"></div>
+    <p style="text-align: center;"><a href="index.html">Back to Home Page</a></p>
+  </div>
+  <script>
+    function checkAnswer(answer) {
+      var resultDiv = document.getElementById('result');
+      if (answer === 'b') {
+        resultDiv.textContent = 'Correct! You are Cracked My Guy!!!! Shutter Speed is the right answer.';
+      } else {
+        resultDiv.textContent = 'Incorrect. Try again!';
+      }
+    }
+  </script>
+</body>
+</html>

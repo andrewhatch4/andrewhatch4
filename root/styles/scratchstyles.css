@@ -1,0 +1,43 @@
+/* scratchstyles.css */
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 20px;
+}
+
+.content-block {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+}
+
+.video-container,
+.tableau-container,
+.app-link {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
